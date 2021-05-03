@@ -45,7 +45,17 @@
                 <ul class="dropdown-menu">
                     <li><a href="#">QQ</a></li>
                     <li><a href="#">WeChat</a></li>
-                    <li><a href="#">e-mail</a></li>
+                    <li><a href="#" class="tooltip-show" data-toggle="tooltip"
+        title="单击">e-mail</a>
+			    <script>
+				    $(function () { $('.tooltip-show').tooltip('show');});
+                                    $(function () { $('.tooltip-show').on('show.bs.tooltip', function () {
+                                    alert("Alert message on show");
+                                })
+                          });
+			    </script>
+		</li>
+			
                     <li class="divider"></li>
                     <li><a href="./writer.html">关于作者资料</a></li>
                     <li class="divider"></li>
@@ -57,9 +67,10 @@
             </div>
         </nav>
 
-	    <div class="container">
+      <div class="container">
         <p>
-          <button type="button" class="btn btn-primary btn-lg">Let's go</button>
+          <!-- 表示一个成功的或积极的动作 -->
+          <button type="button" class="btn btn-success">Go</button>
         </p>
       </div>
     </body>
