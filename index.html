@@ -43,20 +43,21 @@
                             <b class="caret"></b>
                         </a>
                 <ul class="dropdown-menu">
-                    <li><a href="#">QQ</a>
+                    <li><a href="#" class="toolti-show" data-toggle="tooltip"
+        title="单击">QQ</a>
 			    <script>
-				    $(function () { $('.tooltip-show').tooltip('show');});
-				    $(function () { $('.tooltip-show').on('show.bs.tooltip', function () {
+				    $(function () { $('.toolti-show').tooltip('show');});
+				    $(function () { $('.toolti-show').on('show.bs.tooltip', function () {
 		                    alert("QQ:2671113655")
 			    </script>
 			
 			</li>
-                    <li><a href="#" class="tooltip-show" data-toggle="tooltip"
+                    <li><a href="#" class="tooltip-shw" data-toggle="tooltip"
         title="单击">WeChat</a>
 		
 			    <script>
-                                    $(function () { $('.tooltip-show').tooltip('show');});
-				    $(function () { $('.tooltip-show').on('show.bs.tooltip', function () {
+                                    $(function () { $('.tooltip-shw').tooltip('show');});
+				    $(function () { $('.tooltip-shw').on('show.bs.tooltip', function () {
                                     alert("cxrzys17613354985");
                                 })
                           });
@@ -86,6 +87,6 @@
 
  
           <!-- 表示一个成功的或积极的动作 -->
-       <button type="button" class="btn btn-success">Go</button>
+       <button type="button" class="btn btn-default">Blog</button>
     </body>
 </html>
